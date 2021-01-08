@@ -1,22 +1,20 @@
-const addInput = document.getElementById('add-input');
-const addInput2 = document.getElementById('add-input-2');
+import { addClickHandler } from './handlers.js';
 const addButton = document.getElementById('add-button');
-const addResult = document.getElementById('sum');
+addButton.addEventListener('click', addClickHandler);
 
-addButton.addEventListener('click', () => {
-    const result = addInput.valueAsNumber + addInput2.valueAsNumber;
-    addResult.textContent = result;
-})
-const subtractInput = document.getElementById('subtract-input');
-const subtractInput2 = document.getElementById('subtract-input-2');
+import { subtractClickHandler } from './handlers.js';
 const subtractButton = document.getElementById('subtract-button');
-const subtractResult = document.getElementById('difference');
+subtractButton.addEventListener('click', subtractClickHandler);
 
-subtractButton.addEventListener('click', () => {
-    const result = subtractInput.valueAsNumber - subtractInput2.valueAsNumber;
-    subtractResult.textContent = result;
-})
-const multiplyInput = document.getElementById('multiply-input');
+import { multiplyClickHandler } from './handlers.js';
+const multiplyButton = document.getElementById('multiply-button');
+multiplyButton.addEventListener('click', multiplyClickHandler);
+
+import { divideClickHandler } from './handlers.js';
+const divideButton = document.getElementById('divide-button');
+divideButton.addEventListener('click', divideClickHandler);
+
+/*const multiplyInput = document.getElementById('multiply-input');
 const multiplyInput2 = document.getElementById('multiply-input-2');
 const multiplyButton = document.getElementById('multiply-button');
 const multiplyResult = document.getElementById('product');
@@ -33,4 +31,4 @@ const divideResult = document.getElementById('div-answer');
 divideButton.addEventListener('click', () => {
     const result = divideInput.valueAsNumber / divideInput2.valueAsNumber;
     divideResult.textContent = result;
-})
+})*/
