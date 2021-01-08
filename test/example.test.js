@@ -4,14 +4,14 @@ import { getSum } from '../utils.js';
 
 const test = QUnit.test;
 
-test('For the love of god please return 5 when give 3 and 2', (expect) => {
+test('For the love of god please return 100 when given 50 and 50', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 5;
+    const expected = 100;
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = getSum(3, 2);
+    const actual = getSum(50, 50);
 
     //Expect
     // Make assertions about what is expected versus the actual result
