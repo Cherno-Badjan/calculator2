@@ -1,9 +1,11 @@
-import { getSum } from './utils.js';
+import { getSum, getDifference, getProduct, getDiv } from './utils.js';
 
+//Addition Variables
 const addInput = document.getElementById('add-input');
 const addInput2 = document.getElementById('add-input-2');
 const addResult = document.getElementById('sum');
 
+//Addition Handler
 export function addClickHandler() {
 
     const addValue = addInput.valueAsNumber;
@@ -14,13 +16,12 @@ export function addClickHandler() {
 
     addResult.textContent = sum;
 }
-
-import { getDifference } from './utils.js';
-
+//Subtraction Variables
 const subtractInput = document.getElementById('subtract-input');
 const subtractInput2 = document.getElementById('subtract-input-2');
 const subtractResult = document.getElementById('difference');
 
+//Subtraction Handler
 export function subtractClickHandler() {
 
     const subtractValue = subtractInput.valueAsNumber;
@@ -31,13 +32,13 @@ export function subtractClickHandler() {
 
     subtractResult.textContent = difference;
 }
-import { getProduct } from './utils.js';
 
+//Multiply Variables
 const multiplyInput = document.getElementById('multiply-input');
 const multiplyInput2 = document.getElementById('multiply-input-2');
 const multiplyResult = document.getElementById('product');
 
-
+//Multiply Handler
 export function multiplyClickHandler() {
 
     const multiplyValue = multiplyInput.valueAsNumber;
@@ -48,14 +49,14 @@ export function multiplyClickHandler() {
 
     multiplyResult.textContent = product;
 }
-import { getDiv } from './utils.js';
 
+//Divide Variables
 const divideInput = document.getElementById('divide-input');
 const divideInput2 = document.getElementById('divide-input-2');
 const divideResult = document.getElementById('div-answer');
 
 
-
+//Divide Handler
 export function divideClickHandler() {
 
     const divideValue = divideInput.valueAsNumber;
